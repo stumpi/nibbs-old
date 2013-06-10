@@ -1,5 +1,7 @@
+#require 'Vflow'
+require 'socket'
 require 'netflow'
-require 'netflow/collector'
+#require 'netflow/collector'
 require 'mongo'
 
 # Connection code goes here
@@ -12,7 +14,7 @@ IPADRESSES	= DB['ipadress']
 #flow = NetflowCollector::start_collector(bind_ip = '0.0.0.0', bind_port = 2055)
 
 #flow.parse_packet()
-Netflow.start_collector
+flow = NetflowCollector.start_collector.new(bind_ip = '0.0.0.0', bind_port = 2055)
 
 
 
