@@ -29,4 +29,4 @@ module Collector
   end
 end
 
-EventMachine::run { EventMachine::open_datagram_socket("0.0.0.0", 9999, Collector) }
+EventMachine::run { EventMachine::open_datagram_socket("0.0.0.0", 2055, Collector) }
