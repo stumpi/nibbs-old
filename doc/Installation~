@@ -1,0 +1,17 @@
+Nibbs Komponenten
+-logstash
+--logstash plugins
+---rss https://github.com/logstash-plugins/logstash-input-rss/tree/master/lib/logstash/inputs
+
+-Installation Logstash via LXC on Ubuntu 14.04
+--lxc-create -t ubuntu --name nibbs-logstash-001
+---Login via
+----user:ubuntu
+----pwd:ubuntu
+---install wget
+----apt-get install wget
+---install java
+----apt-get install default-jre
+---install rss plugin
+----git clone https://github.com/logstash-plugins/logstash-input-rss.git
+
