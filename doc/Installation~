@@ -18,20 +18,23 @@ Nibbs Komponenten
 
 -Installation Nibbs WebUI
 --lxc-create -t ubuntu --name nibbs-webui-001
----install mongodb
-----apt-get install mongodb
----install git
-----apt-get install git
 ---install ruby
 ----apt-get install ruby2.0
+---remove ruby191
+----bash remove-ruby-191.sh
 ---install ruby bundle
-----gem install bundler
+----apt-get install bundler
+---install git
+----apt-get install git
 ---clone nibbs github
 ----git clone https://github.com/stumpi/nibbs.git
 -----Create the Nibbs-WEB-UI
-------
+------Create Gemfile
+
 ---install bson gem
 ----gem install 
 ---install gems with bundle
 ----sudo bundle install
+---install mongodb
+----apt-get install mongodb
 

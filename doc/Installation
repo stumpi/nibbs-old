@@ -21,18 +21,16 @@ Nibbs Komponenten
 ---install ruby
 ----apt-get install ruby2.0
 ---remove ruby191
-----for i in erb gem irb rdoc ri ruby testrb; do
-    sudo ln -s /usr/bin/$i''2.0 /usr/local/bin/$i
-done
+----bash remove-ruby-191.sh
 ---install ruby bundle
 ----apt-get install bundler
 ---install git
 ----apt-get install git
 ---clone nibbs github
 ----git clone https://github.com/stumpi/nibbs.git
+
 -----Create the Nibbs-WEB-UI
 ------Create Gemfile
-
 ---install bson gem
 ----gem install 
 ---install gems with bundle
