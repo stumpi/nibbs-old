@@ -35,6 +35,9 @@ Nibbs Komponenten
 ----gem install 
 ---install gems with bundle
 ----sudo bundle install
+---startup webserver
+----sudo shotgun -p 8080  192.168.123.176 app.rb
 ---install mongodb
 ----apt-get install mongodb
-
+---import data schema on mongodb
+----

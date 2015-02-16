@@ -28,13 +28,15 @@ Nibbs Komponenten
 ----apt-get install git
 ---clone nibbs github
 ----git clone https://github.com/stumpi/nibbs.git
+
 -----Create the Nibbs-WEB-UI
 ------Create Gemfile
-
 ---install bson gem
 ----gem install 
 ---install gems with bundle
 ----sudo bundle install
+---startup webserver
+----sudo shotgun -p 8080  192.168.123.176 app.rb
 ---install mongodb
 ----apt-get install mongodb
 
