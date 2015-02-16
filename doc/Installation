@@ -15,3 +15,28 @@ Nibbs Komponenten
 ---install rss plugin
 ----git clone https://github.com/logstash-plugins/logstash-input-rss.git
 
+
+-Installation Nibbs WebUI
+--lxc-create -t ubuntu --name nibbs-webui-001
+---install ruby
+----apt-get install ruby2.0
+---remove ruby191
+----for i in erb gem irb rdoc ri ruby testrb; do
+    sudo ln -s /usr/bin/$i''2.0 /usr/local/bin/$i
+done
+---install ruby bundle
+----apt-get install bundler
+---install git
+----apt-get install git
+---clone nibbs github
+----git clone https://github.com/stumpi/nibbs.git
+-----Create the Nibbs-WEB-UI
+------Create Gemfile
+
+---install bson gem
+----gem install 
+---install gems with bundle
+----sudo bundle install
+---install mongodb
+----apt-get install mongodb
+
