@@ -1,0 +1,12 @@
+.content
+  .container
+    .row
+      .span12
+        %form{ :action => "/addevent", :method => "post"}
+          %h1= 'Add Event'
+          -#%small= 'Example: Task'
+          %p Search String:
+          %input.form-input{ :name => "addevent", :type => "text", :size => "30"}
+          %br
+          %br
+          %input.btn{ :name => "submit", :type => "submit", :value => "Add Event"}

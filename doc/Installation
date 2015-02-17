@@ -40,4 +40,7 @@ Nibbs Komponenten
 ---install mongodb
 ----apt-get install mongodb
 ---import data schema on mongodb
-----
+----install elasticsearch
+-----wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.4.3.deb
+
+

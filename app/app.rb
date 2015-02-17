@@ -6,7 +6,8 @@ require 'haml'
 require 'digest/md5'
 require 'googlestaticmap'
 require 'nmap/parser'
-
+require 'elasticsearch'
+require 'stretcher'
 
 configure do
   enable :sessions
@@ -56,7 +57,22 @@ get '/dashboard' do
 end
 
 get '/events' do
-  haml :events
+        # Create a Blogpost
+        es.index index: 'nibbs',
+         type:  'task',
+         id: 1,
+         body: {
+          title:   "Installation VLAN",
+          content: "VLAN 811",
+          date:    "2015-02-17"
+         }
+	#Show all Events
+	@events = es.get index: 'nibbs', type: 'task', id: 1
+  	haml :events
+end
+
+get '/addevent' do
+  haml :addevent
 end
 
 get '/addip' do

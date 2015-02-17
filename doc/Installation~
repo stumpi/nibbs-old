@@ -39,4 +39,5 @@ Nibbs Komponenten
 ----sudo shotgun -p 8080  192.168.123.176 app.rb
 ---install mongodb
 ----apt-get install mongodb
-
+---import data schema on mongodb
+----
