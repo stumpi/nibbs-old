@@ -55,7 +55,7 @@ get '/dashboard' do
   haml :dashboard
 end
 
-get '/Events' do
+get '/events' do
   haml :events
 end
 
