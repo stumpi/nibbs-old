@@ -59,16 +59,16 @@ end
 
 get '/events' do
         # Create a Blogpost
-        es.index index: 'nibbs',
-         type:  'task',
-         id: 1,
-         body: {
-          title:   "Installation VLAN",
-          content: "VLAN 811",
-          date:    "2015-02-17"
-         }
+      #  es.index index: 'nibbs',
+      #   type:  'task',
+      #   id: 1,
+      #   body: {
+      #    title:   "Installation VLAN",
+      #    content: "VLAN 811",
+      #    date:    "2015-02-17"
+      #   }
 	#Show all Events
-	@events = es.get index: 'nibbs', type: 'task', id: 1
+	#@events = es.get index: 'nibbs', type: 'task', id: 1
   	haml :events
 end
 
