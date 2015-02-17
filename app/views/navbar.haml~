@@ -11,9 +11,9 @@
           %li
             %a{:href => '/'}Home
           %li
-            %a{:href => '/dashboard'}Dashboard
+            %a{:href => '/ipadress'}IP Adressen
           %li
-            %a{:href => '/events'}Events
+            %a{:href => '/addip'}Add IP Adress
           %li
             %a{:href => '/netscan'}Scan IP Network
           %li

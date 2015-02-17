@@ -1,0 +1,12 @@
+.content
+  .container
+    .row
+      .span12
+        %form{ :action => "/netscan", :method => "post"}
+          %h1= 'Scan IP Network'
+          -#%small= 'example: 10.0.0.0/24'
+          %p IP Network:
+          %input.form-input{ :name => "network", :type => "text", :size => "30"}
+          %br
+          %br
+          %input.btn{ :name => "submit", :type => "submit", :value => "Submit"}
