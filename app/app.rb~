@@ -7,7 +7,7 @@ require 'digest/md5'
 require 'googlestaticmap'
 require 'nmap/parser'
 require 'elasticsearch'
-require 'stretcher'
+#require 'stretcher'
 
 configure do
   enable :sessions
