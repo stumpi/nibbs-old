@@ -8,7 +8,7 @@
           %th Type
           %th Message
       %tbody
-      ~@ipadresses.each do |ip|
+      ~@esearch.each do |event|
         %tr
           %td 
             %a{:href => '/ipadress/' << ip['_id'].to_s}=  ip['adress']
