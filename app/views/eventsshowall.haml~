@@ -9,11 +9,4 @@
           %th Message
           
 
-      %tbody
-      -# ~@ipadresses.each do |ip|
-        %tr
-          %td 
-        -#    %a{:href => '/ipadress/' << ip['_id'].to_s}=  ip['adress']
-         -# %td= ip['adress'] ? ip['description'] : '&nbsp'
-         -# %td= ip['type']
-         -# %td= ip['time']
+   
