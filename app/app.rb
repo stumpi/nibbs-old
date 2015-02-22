@@ -58,15 +58,7 @@ get '/dashboard' do
 end
 
 get '/events' do
-        # Create a Blogpost
-      #  es.index index: 'nibbs',
-      #   type:  'task',
-      #   id: 1,
-      #   body: {
-      #    title:   "Installation VLAN",
-      #    content: "VLAN 811",
-      #    date:    "2015-02-17"
-      #   }
+      
 	#Show all Events
 	#@events = es.get index: 'nibbs', type: 'task', id: 1
   	haml :events
@@ -76,11 +68,21 @@ get '/eventsshowall' do
   #Show all Events
   #@events = es.search index: 'nibbs', type: 'task', id: 1 
   #@events = es.all
+  es.ping
   haml :eventsshowall
 end
 
 get '/addevent' do
-  haml :addevent
+  # Create a Blogpost
+        es.index index: 'nibbs',
+         type:  'task',
+         id: 1,
+         body: {
+          title:   "Installation VLAN",
+          content: "VLAN 811",
+          date:    "2015-02-17"
+         }
+  #haml :addevent
 end
 
 
