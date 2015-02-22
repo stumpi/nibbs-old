@@ -82,11 +82,9 @@ get '/addevent' do
         es.index index: 'nibbs',
          type:  'task',
          id: '1',
-         body: {
-          title:   "Installation VLAN",
-          content: "VLAN 811",
-          date:    "2015-02-17"
-         }
+         title:   "Installation VLAN",
+         content: "VLAN 811",
+         date:    "2015-02-17"
   #haml :addevent
 end
 
