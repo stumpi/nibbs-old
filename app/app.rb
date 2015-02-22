@@ -79,9 +79,9 @@ end
 
 get '/addevent' do
   # Create a Blogpost
-        es.index index: 'nibbs-events',
+        es.index index: 'nibbsevents',
          type:  'task',
-         id: '1',
+         id: '2',
          title:   "Installation VLAN",
          content: "VLAN 811",
          date:    "2015-02-17"
