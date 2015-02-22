@@ -1,15 +1,37 @@
-require 'rubygems'
-require 'bundler'
+require 'slim'
+require 'sinatra'
+require 'stretcher'
 
-Bundler.require
+configure do
+  ES = Stretcher::Server.new('http://localhost:9200')
+end
 
-module SinatraBootstrap
-  class App < Sinatra::Application
-    configure do
-      disable :method_override
-      disable :static
-    end
-
-    use Rack::Deflater
+class Tweets
+  def self.match(text: 'elasticsearch', size: 1000)
+    ES.index(:tweets).search size: size, query: {
+      match: { text: text }
+    }
   end
 end
+
+get "/" do
+  redirect "/elasticsearch"
+end
+
+get "/:word" do
+  slim :index, locals: {
+    tweets: Tweets.match(text: params[:word])
+  }
+end
+
+__END__
+@@ layout
+doctype html
+html
+  body== yield
+
+@@ index
+h1= "#{tweets.total} tweets matching “#{params[:word]}”"
+ul
+  - tweets.results.each do |tweet|
+    li= tweet.text
