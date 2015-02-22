@@ -73,13 +73,13 @@ get '/eventsshowall' do
   #@events = es.search index: 'nibbs', type: 'task', id: 1 
   #@events = es.all
   esearch = Elasticsearch::Client.new log: true
-  @events = esearch.search(index: 'nibbs-events')
+  @events = esearch.search(index: 'nibbs')
   haml :eventsshowall
 end
 
 get '/addevent' do
   # Create a Blogpost
-        es.index index: 'nibbsevents',
+        es.index index: 'nibbs',
          type:  'task',
          id: '2',
          body: {

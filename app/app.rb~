@@ -79,12 +79,14 @@ end
 
 get '/addevent' do
   # Create a Blogpost
-        es.index index: 'nibbsevents',
+        es.index index: 'nibbs',
          type:  'task',
          id: '2',
+         body: {
          title:   "Installation VLAN",
          content: "VLAN 811",
          date:    "2015-02-17"
+         }
   #haml :addevent
 end
 
