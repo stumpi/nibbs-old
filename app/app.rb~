@@ -68,11 +68,13 @@ get '/events' do
       #    date:    "2015-02-17"
       #   }
 	#Show all Events
-	@events = es.get index: 'nibbs', type: 'task', id: 1
+	#@events = es.get index: 'nibbs', type: 'task', id: 1
   	haml :events
 end
 
 get '/events-show-all' do
+  #Show all Events
+  @events = es.get index: 'nibbs', type: 'task', id: 1 
   haml :eventsshowall
 end
 
