@@ -72,9 +72,14 @@ get '/events' do
   	haml :events
 end
 
+get '/events-show-all' do
+  haml :eventsshowall
+end
+
 get '/addevent' do
   haml :addevent
 end
+
 
 get '/addip' do
   haml :addip
