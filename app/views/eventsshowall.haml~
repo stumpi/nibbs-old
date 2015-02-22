@@ -9,4 +9,11 @@
           %th Message
           
 
-   
+   %tbody
+      ~@esearch.each do |event|
+        %tr
+          %td 
+            %a{:href => '/event/' << event['_id'].to_s}=  event['title']
+          %td= event['id'] ? event['title'] : '&nbsp'
+          %td= event['date']
+          %td= event['content']
