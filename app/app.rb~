@@ -22,6 +22,11 @@ before do
   end
 end
 
+#Database Connections
+es = Elasticsearch::Client.new log: true
+es.ping
+
+
 get '/' do
 #  haml :index
 	redirect '/ipadress'
@@ -68,9 +73,8 @@ get '/eventsshowall' do
   #Show all Events
   #@events = es.search index: 'nibbs', type: 'task', id: 1 
   #@events = es.all
-  es = Elasticsearch::Client.new log: true
-  es.ping
-  @events = es.all
+  
+  @events = es.get index: 'nibbs'
   haml :eventsshowall
 end
 
