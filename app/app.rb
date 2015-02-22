@@ -75,7 +75,7 @@ end
 get '/eventsshowall' do
   #Show all Events
   #@events = es.search index: 'nibbs', type: 'task', id: 1 
-  @events = es.all
+  #@events = es.all
   haml :eventsshowall
 end
 
