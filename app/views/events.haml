@@ -11,19 +11,4 @@
           %br
           %input.btn{ :name => "submit", :type => "submit", :value => "Search"}
 
-	%table.table.table-striped
-      	%thead
-        %tr
-          %th Event
-          %th Beschreibung
-          %th Type
-          %th Zeit
 
-      %tbody
-      ~@events.each do |event|
-        %tr
-          %td 
-            %a{:href => '/events/' << event['_id'].to_s}=  event['Title']
-          %td= event['content'] ? event['content'] : '&nbsp'
-          %td= event['content']
-          %td= event['content']
