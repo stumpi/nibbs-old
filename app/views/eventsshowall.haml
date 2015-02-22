@@ -7,4 +7,9 @@
           %th Timestamp
           %th Type
           %th Message
-        
+        %tbody
+      ~@events.each do |event|
+        %tr
+          %td 
+            %a{:href => '/event/' << event['_id'].to_s}=  event['_type']
+          
