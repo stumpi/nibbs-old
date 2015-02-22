@@ -82,7 +82,7 @@ get '/addevent' do
   # Create a Blogpost
         es.index index: 'nibbs',
          type:  'task',
-         id: 1,
+         id: '1',
          body: {
           title:   "Installation VLAN",
           content: "VLAN 811",
