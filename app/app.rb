@@ -68,8 +68,9 @@ get '/eventsshowall' do
   #Show all Events
   #@events = es.search index: 'nibbs', type: 'task', id: 1 
   #@events = es.all
-  es1 = Elasticsearch::Client.new log: true
-  es1.ping
+  es = Elasticsearch::Client.new log: true
+  es.ping
+  @events = es.all
   haml :eventsshowall
 end
 
