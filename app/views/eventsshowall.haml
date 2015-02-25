@@ -8,9 +8,7 @@
           %th Type
           %th Message
         %tbody
-     
+     ~@search_es.results.each do |event|
         %tr
-          %td= search_es.results[0].title
-          %td= search_es.results[0].title
-          %td= search_es.results[0].title
-          %td= search_es.results[0].title
+          %td= event.to_yaml
+

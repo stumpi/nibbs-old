@@ -10,7 +10,7 @@
         %tbody
      
         %tr
-          %td= search_res.results[0].title
-          %td= search_res.results[0].title
-          %td= search_res.results[0].title
-          %td= search_res.results[0].title
+          %td= search_es.results[0].title
+          %td= search_es.results[0].title
+          %td= search_es.results[0].title
+          %td= search_es.results[0].title

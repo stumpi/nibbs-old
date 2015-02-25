@@ -86,14 +86,15 @@ get '/eventsshowall' do
       	term :title, '*'
   	end
   end
-  @events = search_es.results
-  search_es.results.each do |event|
-   puts event.to_yaml 
+#  @events = search_es.results
+  
+# search_es.results.each do |event|
+#   puts event.to_yaml 
+#
+#  end
+#puts "Title" 
 
-  end
-puts "Title" 
-
-#  haml :eventsshowall
+  haml :eventsshowall
 end
 
 get '/addevent' do
