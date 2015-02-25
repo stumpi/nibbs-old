@@ -11,9 +11,8 @@
         %tbody
       ~@search_es.results.each do |event|
         %tr
-          %td 
-            %a{:href => '/ipadress/' << ip['_id'].to_s}=  ip['adress']
-          %td= ip['adress'] ? ip['description'] : '&nbsp'
-          %td= ip['type']
-          %td= ip['time']
+          %td= event['_id'].to_s
+          %td= event['_id'].to_s
+          %td= event['_id'].to_s
+          %td= event['_id'].to_s
        
