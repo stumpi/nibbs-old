@@ -10,5 +10,4 @@
         %tbody
      ~@search_es.results.each do |event|
         %tr
-          %td= event.to_yaml
 
