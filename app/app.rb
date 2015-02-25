@@ -8,7 +8,7 @@ require 'digest/md5'
 require 'googlestaticmap'
 require 'nmap/parser'
 require 'elasticsearch'
-require 'stretcher'
+#require 'stretcher'
 require 'tire'
 #require 'yajl/json_gem'
 require 'multi_json'
@@ -28,7 +28,7 @@ end
 #Database Connections
 #es = Elasticsearch::Client.new log: true
 #es.ping
-
+Tire::Configuration.url ENV['http://localhost:9200']
 
 get '/' do
 #  haml :index
