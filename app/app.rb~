@@ -9,6 +9,7 @@ require 'googlestaticmap'
 require 'nmap/parser'
 require 'elasticsearch'
 #require 'stretcher'
+require 'tire'
 
 configure do
   enable :sessions
