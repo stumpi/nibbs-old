@@ -8,4 +8,6 @@ gem "nmap-parser"
 gem "elasticsearch"
 gem "stretcher"
 gem "tire"
+gem "yajl/json_gem"
+gem "multi_json"
 
