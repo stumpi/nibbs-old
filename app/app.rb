@@ -8,7 +8,7 @@ require 'digest/md5'
 require 'googlestaticmap'
 require 'nmap/parser'
 require 'elasticsearch'
-#require 'stretcher'
+require 'stretcher'
 require 'tire'
 #require 'yajl/json_gem'
 require 'multi_json'
@@ -78,7 +78,7 @@ get '/eventsshowall' do
   #esearch = Elasticsearch::Client.new log: true
   #@events = es.search index: 'nibbs'
 
-  estire = Tire.search 'nibbs' do
+  s = Tire.search 'nibbs' do
       query do
         string 'title:*'
       end
