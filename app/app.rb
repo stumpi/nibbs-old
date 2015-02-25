@@ -81,12 +81,12 @@ get '/eventsshowall' do
   #@events = es.all
   #esearch = Elasticsearch::Client.new log: true
   #@events = es.search index: 'nibbs'
-  search_res = Tire.search('nibbs') do
+  search_es = Tire.search('nibbs') do
   	query do
       	term :title, '*'
   	end
   end
-
+  @events = search_es.results
 
   haml :eventsshowall
 end
