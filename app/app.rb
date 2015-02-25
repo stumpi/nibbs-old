@@ -84,7 +84,7 @@ get '/eventsshowall' do
       end
 
 
-  haml :eventsshowall
+  #haml :eventsshowall
 end
 
 get '/addevent' do
