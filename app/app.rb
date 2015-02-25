@@ -88,7 +88,7 @@ get '/eventsshowall' do
   end
   @events = search_es.results
   search_es.results.each do |event|
-   puts "Title" 
+   puts event.to_yaml 
 
   end
 puts "Title" 

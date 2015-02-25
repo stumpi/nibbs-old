@@ -91,7 +91,7 @@ get '/eventsshowall' do
    puts "Title" 
 
   end
-
+puts "Title" 
 
 #  haml :eventsshowall
 end
