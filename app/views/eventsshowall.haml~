@@ -1,14 +1,19 @@
 .container
   .content
-    %h2 Events
+    %h2 IP Adressen
     %table.table.table-striped
       %thead
         %tr
-          %th Timestamp
+          %th Adresse
+          %th Beschreibung
           %th Type
-          %th Message
+          %th Zeit
         %tbody
-         %tr
-          %td 'Test'
-	  %td 'Test 1'
-          %td 'Test 2'
+      ~@search_es.results.each do |event|
+        %tr
+          %td 
+            %a{:href => '/ipadress/' << ip['_id'].to_s}=  ip['adress']
+          %td= ip['adress'] ? ip['description'] : '&nbsp'
+          %td= ip['type']
+          %td= ip['time']
+       

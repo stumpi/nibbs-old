@@ -1,10 +1,18 @@
 .container
   .content
-    %h2 Events
+    %h2 IP Adressen
     %table.table.table-striped
       %thead
         %tr
-          %th Timestamp
+          %th Adresse
+          %th Beschreibung
           %th Type
-          %th Message
+          %th Zeit
+        %tbody
+      ~@search_es.results.each do |event|
+        %tr
+          %td= event['_id'].to_s
+          %td= event['_id'].to_s
+          %td= event['_id'].to_s
+          %td= event['_id'].to_s
        
