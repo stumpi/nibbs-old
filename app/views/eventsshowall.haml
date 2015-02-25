@@ -8,12 +8,11 @@
           %th Timestamp
           %th Type
           %th Beschreibung
-	  %th Beschreibung
+	  
         %tbody
       ~@events.each do |event|
         %tr
-          %td= event['title']
-          %td= event['title']
-          %td= event['title']
-          %td= event['title']
+          %td= event['_id']
+          %td= event['date']
+          %td= event['_type']
           %td= event['title']
