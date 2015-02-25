@@ -88,7 +88,7 @@ get '/eventsshowall' do
   end
   @events = search_es.results
 
-puts search_es.results[0]
+puts "<html".search_es.results[0]
 
 #  haml :eventsshowall
 end
