@@ -9,6 +9,7 @@ require 'googlestaticmap'
 require 'nmap/parser'
 require 'elasticsearch'
 #require 'stretcher'
+require 'tire'
 
 configure do
   enable :sessions
@@ -81,7 +82,7 @@ get '/addevent' do
   # Create a Blogpost
         es.index index: 'nibbs',
          type:  'task',
-         id: '2',
+         id: '3',
          body: {
          title:   "Installation VLAN",
          content: "VLAN 811",

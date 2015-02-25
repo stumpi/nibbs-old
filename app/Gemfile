@@ -7,3 +7,5 @@ gem "googlestaticmap"
 gem "nmap-parser"
 gem "elasticsearch"
 gem "stretcher"
+gem "tire"
+
