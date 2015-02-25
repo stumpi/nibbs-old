@@ -8,9 +8,8 @@
           %th Beschreibung
           %th Type
           %th Zeit
-
-      %tbody
-      ~@ipadresses.each do |ip|
+        %tbody
+      ~@events.each do |ip|
         %tr
           %td 
             %a{:href => '/ipadress/' << ip['_id'].to_s}=  ip['adress']
