@@ -88,7 +88,9 @@ get '/eventsshowall' do
   end
   @events = search_es.results
 
-  haml :eventsshowall
+puts search_es.results[0].title
+
+#  haml :eventsshowall
 end
 
 get '/addevent' do
