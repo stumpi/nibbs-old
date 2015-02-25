@@ -12,7 +12,7 @@
       ~@events.each do |event|
         %tr
           %td= event['_id']
-          %td= event['_type']
+          %td= event['date']
           %td= event['title']
-          %td= event.to_s
+          %td= event['_type']
        
