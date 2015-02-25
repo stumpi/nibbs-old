@@ -28,7 +28,11 @@ end
 #Database Connections
 #es = Elasticsearch::Client.new log: true
 #es.ping
-Tire::Configuration.url ENV['http://localhost:9200']
+#Tire::Configuration.url ENV['http://localhost:9200']
+#Tire.configure do
+#  url environment['elasticsearch_host']
+#end
+
 
 get '/' do
 #  haml :index
@@ -78,10 +82,10 @@ get '/eventsshowall' do
   #esearch = Elasticsearch::Client.new log: true
   #@events = es.search index: 'nibbs'
 
-  #s = Tire.search 'nibbs' do
-  #    query do
-  #      string 'title:*'
-  #    end
+  @s = Tire.search 'nibbs' do |search|
+      query do
+        string 'title:*'
+      end
 
 
   haml :eventsshowall
