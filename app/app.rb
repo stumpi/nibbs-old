@@ -83,7 +83,7 @@ get '/eventsshowall' do
   #@events = es.search index: 'nibbs'
   search_es = Tire.search('nibbs') do
   	query do
-      	term :title, '*'
+      	  string 'title:*'
   	end
   end
   @events = search_es.results
