@@ -78,13 +78,13 @@ get '/eventsshowall' do
   #esearch = Elasticsearch::Client.new log: true
   #@events = es.search index: 'nibbs'
 
-  #es = Tire.search 'nibbs' do
-  #    query do
-  #      string 'title:*'
-  #    end
+  estire = Tire.search 'nibbs' do
+      query do
+        string 'title:*'
+      end
 
 
-  #haml :eventsshowall
+  haml :eventsshowall
 end
 
 get '/addevent' do
