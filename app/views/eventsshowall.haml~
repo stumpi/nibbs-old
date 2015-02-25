@@ -1,13 +1,15 @@
 .container
   .content
-    %h2 IP Adressen
+    %h2 Events
     %table.table.table-striped
       %thead
         %tr
-          %th Adresse
-          %th Beschreibung
+          %th ID
+          %th Timestamp
           %th Type
-          %th Zeit
+          %th Beschreibung
+	  %th Message
+          %th Tags
         %tbody
       ~@events.each do |event|
         %tr
