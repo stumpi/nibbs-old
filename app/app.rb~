@@ -10,7 +10,7 @@ require 'nmap/parser'
 require 'elasticsearch'
 #require 'stretcher'
 require 'tire'
-require 'yajl/json_gem'
+#require 'yajl/json_gem'
 require 'multi_json'
 
 configure do

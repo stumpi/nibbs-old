@@ -76,7 +76,14 @@ get '/eventsshowall' do
   #@events = es.search index: 'nibbs', type: 'task', id: 1 
   #@events = es.all
   #esearch = Elasticsearch::Client.new log: true
-  @events = es.search index: 'nibbs'
+  #@events = es.search index: 'nibbs'
+
+  es = Tire.search 'nibbs' do
+      query do
+        string 'title:*'
+      end
+
+
   haml :eventsshowall
 end
 
