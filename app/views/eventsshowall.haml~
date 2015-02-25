@@ -9,6 +9,6 @@
           %th Message
         %tbody
      %tr
-          %td= search_es.to_yaml
-	  %td= search_es.to_yaml
-          %td= search_es.to_yaml
+          %td Test
+	  %td Test 1
+          %td Test 2
