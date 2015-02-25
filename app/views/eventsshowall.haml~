@@ -8,6 +8,5 @@
           %th Type
           %th Message
         %tbody
-     ~@search_es.results.each do |event|
-        %tr
-
+     
+     
