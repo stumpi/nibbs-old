@@ -1,18 +1,18 @@
 .container
   .content
-    %h2 Events
+    %h2 IP Adressen
     %table.table.table-striped
       %thead
         %tr
-          %th ID
-          %th Timestamp
+          %th Adresse
           %th Beschreibung
           %th Type
+          %th Zeit
         %tbody
       ~@events.each do |event|
-	%tr
-           %td= event['_id']
-           %td= event['title']
-           %td= event['title']
-           %td= event['_type']
+        %tr
+          %td= event['title']
+          %td= event['title']
+          %td= event['title']
+          %td= event['title']
        
