@@ -86,7 +86,7 @@ get '/eventsshowall' do
       	term :title, '*'
   	end
   end
-
+  @events = search_es.results
 
   haml :eventsshowall
 end
