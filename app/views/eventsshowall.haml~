@@ -11,8 +11,8 @@
         %tbody
       ~@events.each do |event|
         %tr
-          %td= event['_id'].to_s
-          %td= event['_id'].to_s
-          %td= event['_id'].to_s
-          %td= event['_id'].to_s
+          %td= event['_id']
+          %td= event['_id']
+          %td= event['_id']
+          %td= event['_id']
        
