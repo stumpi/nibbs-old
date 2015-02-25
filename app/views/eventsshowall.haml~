@@ -8,4 +8,9 @@
           %th Type
           %th Message
         %tbody
-    
+     
+        %tr
+          %td= event['_type']
+          %td= event['_type']
+          %td= event['_type']
+          %td= event['_type']
