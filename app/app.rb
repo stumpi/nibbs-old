@@ -26,8 +26,8 @@ before do
 end
 
 #Database Connections
-es = Elasticsearch::Client.new log: true
-es.ping
+#es = Elasticsearch::Client.new log: true
+#es.ping
 
 
 get '/' do
