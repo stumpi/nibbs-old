@@ -9,7 +9,7 @@
           %th Type
           %th Zeit
         %tbody
-      ~@search_es.results.each do |event|
+      ~@events.each do |event|
         %tr
           %td= event['_id'].to_s
           %td= event['_id'].to_s
