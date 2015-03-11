@@ -1,0 +1,16 @@
+.content
+  .container
+    .row
+      .span12
+        %form{ :action => "/addip", :method => "post"}
+          %h1= 'Add IP Adress'
+          -#%small= 'and start to know now'
+          %p IP Adress:
+          %input.form-input{ :name => "adress", :type => "text", :size => "30"}
+          %p Description:
+          %input.form-input{ :name => "name", :type => "text", :size => "30"}
+          %p Tag:
+          %input.form-input{ :name => "tag", :type => "text", :size => "30"}
+          %br
+          %br
+          %input.btn{ :name => "submit", :type => "submit", :value => "Submit"}

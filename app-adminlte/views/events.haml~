@@ -1,0 +1,29 @@
+.content
+  .container
+    .row
+      .span12
+        %form{ :action => "/events", :method => "post"}
+          %h1= 'Events'
+          -#%small= 'Example Search: abc*'
+          %p Search String:
+          %input.form-input{ :name => "eventsearch", :type => "text", :size => "30"}
+          %br
+          %br
+          %input.btn{ :name => "submit", :type => "submit", :value => "Search"}
+
+	%table.table.table-striped
+      	%thead
+        %tr
+          %th Event
+          %th Beschreibung
+          %th Type
+          %th Zeit
+
+      %tbody
+      ~@events.each do |event|
+        %tr
+          %td 
+            %a{:href => '/events/' << event['_id'].to_s}=  event['Title']
+          %td= event['content'] ? event['content'] : '&nbsp'
+          %td= event['content']
+          %td= event['content']

@@ -1,0 +1,18 @@
+.container
+  .content
+    %h2 Events
+    %table.table.table-striped
+      %thead
+        %tr
+          %th ID
+          %th Timestamp
+          %th Type
+          %th Beschreibung
+	  
+        %tbody
+      ~@events.each do |event|
+        %tr
+          %td= event['_id']
+          %td= event['date']
+          %td= event['_type']
+          %td= event['title']

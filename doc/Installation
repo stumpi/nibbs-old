@@ -28,7 +28,8 @@ Nibbs Komponenten
 ----apt-get install git
 ---clone nibbs github
 ----git clone https://github.com/stumpi/nibbs.git
-
+---Integrate admin-lte Webinterface
+----git clone https://github.com/almasaeed2010/AdminLTE.git
 -----Create the Nibbs-WEB-UI
 ------Create Gemfile
 ---install bson gem

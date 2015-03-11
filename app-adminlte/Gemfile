@@ -1,0 +1,13 @@
+source :rubygems
+gem "mongo"
+gem "sinatra"
+gem "haml"
+gem "shotgun"
+gem "googlestaticmap"
+gem "nmap-parser"
+gem "elasticsearch"
+gem "stretcher"
+gem "tire"
+gem "yajl-ruby"
+gem "multi_json"
+
