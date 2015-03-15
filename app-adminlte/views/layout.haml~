@@ -26,10 +26,11 @@
     
 
 
-  %body
+  %body 
     #wraper 
-    #header
-    %div= haml :navbar
+    %header
+       %b NIBBS
+    / %div= haml :navbar
     
       #main.body
         =show_flash
