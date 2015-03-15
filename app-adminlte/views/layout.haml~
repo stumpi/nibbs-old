@@ -26,11 +26,15 @@
     
 
 
-  %body 
-    #wraper 
-    %header
-       %b NIBBS
+  %body .skin-blue
+    .wraper 
+    %header main-header
+      %div= haml :navbar
     
+      #main.body
+        =show_flash
+        %div= yield
+
     -#%hr
     %footer= haml :footer
 
