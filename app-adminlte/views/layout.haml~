@@ -27,7 +27,7 @@
 
 
   %body
-    #skin-blue
+    .skin-blue
     %div= haml :navbar
     #wraper
       #main.body
