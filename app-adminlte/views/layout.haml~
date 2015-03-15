@@ -28,6 +28,7 @@
 
   %body
     #wraper 
+    #header
     %div= haml :navbar
     
       #main.body
