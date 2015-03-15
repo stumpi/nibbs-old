@@ -36,7 +36,10 @@ end
 
 get '/' do
 #  haml :index
-	redirect '/ipadress'
+#	redirect '/ipadress'
+%p 
+ Hello World
+
 end
 
 get '/login' do
