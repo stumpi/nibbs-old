@@ -28,8 +28,9 @@
 
   %body
     #wraper
+    #main.body
     %div= haml :navbar
-      #main.body
+      
         =show_flash
         %div= yield
 
