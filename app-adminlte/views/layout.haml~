@@ -26,8 +26,7 @@
     
 
 
-  %body { class: skin-blue; }
-    .container
+  %body 
     %div= haml :navbar
     #wraper
       #main.body
