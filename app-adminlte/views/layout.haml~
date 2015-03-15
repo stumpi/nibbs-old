@@ -28,13 +28,7 @@
 
   %body { :class => "skin-blue" }
 
-    / %div= haml :navbar
-    #wraper
-      #main.body
-        =show_flash
-        %div= yield
-
-    -#%hr
+        -#%hr
     %footer= haml :footer
 
 
