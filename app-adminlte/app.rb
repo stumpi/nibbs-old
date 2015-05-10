@@ -35,8 +35,8 @@ end
 
 
 get '/' do
-#  haml :index
-	redirect '/ipadress'
+  haml :index
+#	redirect '/ipadress'
 
 end
 
