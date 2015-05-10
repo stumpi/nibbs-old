@@ -5,13 +5,4 @@
   .callout.callout-danger
     %h4 Warning!
     %p Eine neue System Message
-  .box.box-default
-    .box-header.with-border
-      %h3.box-title Blank Box
-    .box-body
-      The great content goes here
-    / /.box-body
-  / /.box
-/ /.content
-/ /.container
-/ /.content-wrapper
+ 
